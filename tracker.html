@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reading Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Readify</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="books.html">Books</a>
+            <a href="tracker.html">Tracker</a>
+            <a href="recommend.html">Recommend</a>
+            <a href="flow.html">Flow</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+    </header>
+
+    <section class="hero">
+        <h2>Reading Progress</h2>
+        <p>Track how far you’ve come</p>
+    </section>
+
+    <section class="glass">
+        <input type="number" id="total" placeholder="Total Pages">
+        <input type="number" id="read" placeholder="Pages Read">
+
+        <button id="calcBtn">Calculate Progress</button>
+
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <p id="result"></p>
+    </section>
+
+    <footer>© 2025 Readify</footer>
+
+    <script src="tracker.js"></script>
+</body>
+
+</html>

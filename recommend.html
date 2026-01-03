@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book Recommendation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Readify</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="books.html">Books</a>
+            <a href="tracker.html">Tracker</a>
+            <a href="recommend.html">Recommend</a>
+            <a href="flow.html">Flow</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+    </header>
+
+    <section class="hero">
+        <h2>Book Recommendation</h2>
+        <p>Find your next favorite read</p>
+    </section>
+
+    <section class="glass">
+        <h3>Select Your Preferences</h3>
+
+        <select id="genre">
+            <option value="Fantasy">Fantasy</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Romance">Romance</option>
+            <option value="Thriller">Thriller</option>
+        </select>
+
+        <button onclick="recommendBook()">Recommend</button>
+
+        <div id="result" style="margin-top:20px;"></div>
+    </section>
+
+    <footer>
+        © 2025 Readify
+    </footer>
+
+    <script src="recommend.js"></script>
+</body>
+
+</html>
