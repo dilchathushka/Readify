@@ -1,7 +1,7 @@
 let audio = new Audio();
 
 window.playSound = function playSound(type) {
-  audio.src = `assets/sounds/${type}.mp3`;
+  audio.src = `${type}.mp3`;
   audio.loop = true;
   audio.play();
 };
